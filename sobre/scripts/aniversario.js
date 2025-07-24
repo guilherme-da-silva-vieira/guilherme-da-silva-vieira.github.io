@@ -9,12 +9,12 @@ incluirIdade = () => {
     let idadeFinal; // claculo final da idade
     let spanAge; //tag span com o id age que vai estar a idade
     const anoAniversario = 2008;// ano do meu aniversario
-    const mesAniversario = 9;// mês do meu aniversario(10 - outubro), pense em um array com 12 valores(ou seja de 0 até 11)
+    const mesAniversario = 10;// mês do meu aniversario(10 - outubro), pense em um array com 12 valores(ou seja de 0 até 11)
     const diaAniversario = 22;// dia do meu aniversário
 
     tempo = new Date();
     mes = tempo.getMonth();
-    dia = tempo.getDay();
+    dia = tempo.getDate();
     ano = tempo.getFullYear();
     spanAge = document.getElementById("age");
 

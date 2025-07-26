@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br" id="page">
+<!-- https://colorhunt.co/palette/f5efffe5d9f2cdc1ffa294f9 -->
+
+<head>
+  <!--Configurando os indexadores de Busca-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Seleção de projetos">
+  <meta name="keywords" content="programming, programação, website, projetos">
+  <meta name="author" content="Guilherme da Silva Vieira">
+  <meta name="robots" content="noindex, nofollow">
+  <title>GUI - Temperatura Serrana</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="../../../../styles/style.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-purple">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../../../../index.html">GUI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="../../../../index.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="../../../../projetos/projetos.html">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../galeria/galeria.html">Galeria</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="../../../../sobre/sobre.html">Sobre</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h1 class="text-center my-5">Temperatura Serrana</h1>
+    <div class="m-auto w-75">
+      <div id="projetoCarousel" class="carousel slide">
+	<div class="carousel-inner">
+	  <div class="carousel-item active">
+	    <img src="img/previsao.png" loading="lazy" class="d-block w-100" alt="apresentando a temperatura máxima e mínima de lages">
+	  </div>
+	  <div class="carousel-item">
+	    <img src="img/previsao2.png" loading="lazy" class="d-block w-100" alt="...">
+	  </div>
+	</div>
+	<button class="carousel-control-prev" type="button" data-bs-target="#projetoCarousel" data-bs-slide="prev">
+	  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Voltar</span>
+	</button>
+	<button class="carousel-control-next" type="button" data-bs-target="#projetoCarousel" data-bs-slide="next">
+	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	  <span class="visually-hidden">Próximo</span>
+	</button>
+      </div>
+    </div>
+    <div class="m-5">
+      <p class="fs-2 paragrafo2">Previsão do tempo de temperatura máxima e mínima  de Lages feito por meio da função fetch do JavaScript,
+	com a Interface de Programação de Aplicativos(com a sigla em inglês sendo API) <a class="color-purple2" href="https://open-meteo.com/" target="_blank">Open-Meteo</a>.</p>
+      <p class="fs-2 paragrafo2">Feito para o <a class="color-purple2" href="https://www.raizserrana.com.br" target="_blank">Projeto Mateando as Raízes da Serra Catarinense</a>
+	da Escola de Educação Básica(EEB) Vidal Ramos Junior, este projeto de incentivar o conhecimento dos principais monumentos de Lages-SC
+	com interatividade e de maneira tecnológica, participando da Feira Estadual de Ciências e Tecnologia de Santa Catarina do Ano de 2025.</a></p>
+	<p class="fs-2 paragrafo2">O site acabou sendo feito por meio do software Wix, enquanto o meu código para obter a temperatura máxima e mínima foi a única parte que envolveu programação e a parte que eu mais gostei de implementar.</p>
+	<p><a href="https://periodicorease.pro.br/rease/article/view/19613" target="_blank" class="btn btn-lg btn-secondary w-100 bg-purple2"><span class="bi bi-book"></span> Artigo contando com mais detalhes o projeto
+</a></p>
+	<p class="fs-2 paragrafo2"><a href="https://github.com/guilherme-da-silva-vieira/Temperatura_Serrana" class="btn btn-lg btn-dark w-100" target="_blank"><span class="bi bi-github"></span>
+	 Visualizar Código-Fonte</a></p>
+    </div>
+  </main>
+    <footer class="text-center bg-purple fs-4 p-1"><span id="copy"></span>
+    </footer>
+    <script src="../../../../scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"></script>
+    <script defer>
+      incluirAno();
+    </script>
+</body>

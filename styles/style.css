@@ -25,7 +25,11 @@
     margin-top:50vh;
 }
 
-.paragrafo2{
+.paragrafo3{
     text-align:justify;
     justify-content: inter-word;
+}
+
+.color-purple2{
+ color: #CDC1FF;
 }

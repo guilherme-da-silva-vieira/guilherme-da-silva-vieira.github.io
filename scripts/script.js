@@ -7,7 +7,7 @@ incluirAno = () =>{
     
     tempo = new Date();
     ano = tempo.getFullYear();//obtendo o ano
-    mensagem = `&copy; ${ano} Guilherme da Silva Vieira, todos os direitos reservados.`;
+    mensagem = `&copy; ${ano} Guilherme da Silva Vieira.`;
     copy = document.getElementById("copy");
     copy.innerHTML = mensagem;
 }

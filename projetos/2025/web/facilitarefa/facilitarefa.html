@@ -1,91 +1,114 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../../../styles/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <title>Facilitarefa - GUI</title>
-  </head>
-  <body>
-    <header>
-    <nav class="navbar navbar-expand-lg bg-purple">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="../../../../index.html">GUI</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../../../../index.html">Início</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="../../../../projetos/projetos.html">Projetos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../../../galeria/galeria.html">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../../../../sobre/sobre.html">Sobre</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <main>
-      <h1 class="text-center my-5">Facilitarefa</h1>
-      <div id="carouselFacilitarefa" class="w-75 m-auto carousel slide" data-bs-theme="dark">
-	<div class="carousel-indicators">
-	  <button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="0" class="active" aria-current="true" aria-label="priemeiro slide"></button>
-	  <button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="1" aria-label="segundo slide"></button>
-	  <button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="2" aria-label="terceiro slide"></button>
-	  <button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="3" aria-label="quarto slide"></button>
-	  <button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="4" aria-label="quinto slide"></button>
-	  <button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="5" aria-label="sexto slide"></button>
-	</div>
-	<div class="carousel-inner">
-	  <div class="carousel-item active">
-	    <img src="img/facilitarefa-slide-1.png" class="d-block w-100" alt="captura de tela do facilitarefa quando não tem nenhuma tarefa registrada" loading="lazy"/>
-	  </div>
-	  <div class="carousel-item">
-	    <img src="img/facilitarefa-slide2.png" class="d-block w-100" alt="captura de tela do facilitarefa registrando uma nova tarefa" loading="lazy"/>
-	  </div>
-	  <div class="carousel-item">
-	    <img src="img/facilitarefa-slide3.png" class="d-block w-100" alt="captura de tela com uma nova tarefa"/>
-	  </div>
-	  <div class="carousel-item">
-	    <img src="img/facilitarefa-slide4.png" class="d-block w-100" alt="captura de tela com a  atualização da tarefa" loading="lazy"/>
-	  </div>
-	  <div class="carousel-item">
-	    <img src="img/facilitarefa-slide5.png" class="d-block w-100" alt="captura de tela com a tarefa atualizada" loading="lazy"/>
-	  </div>
-	  <div class="carousel-item">
-	    <img src="img/facilitarefa-slide6.png" class="d-block w-100" alt="captura de tela com a tarefa removida" loading="lazy"/>
-	  </div>
-	</div>
-	<button class="carousel-control-prev" type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide="prev"/>
-		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-		<span class="visually-hidden">Anterior</span>
-	</button>
-	<button  class="carousel-control-next" type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide="next">
-	  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-	  <span class="visually-hidden">Próximo</span>
-	</button>
-      </div>
-	<p class="fs-2 m-5 paragrafo3">Gerenciador de tarefas demonstrando as operações de CRUD(Create, Read, Update and Delete) por meio da integração do aplicativo em PHP
-	  com o banco de dados(por meio da extensão MySQLi).</p>
-	<p class="fs-2 m-5 paragrafo3">Este projeto foi meu trabalho final em Desenvolvimento de Sistemas Web I.</p>
-	<p class="fs-2 m-5"><a href="https://github.com/guilherme-da-silva-vieira/facilitarefa" class="btn btn-dark btn-lg w-100"><span class="bi bi-github"></span> Analisar Código-Fonte</a></p>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="../../../../styles/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+	<title>Facilitarefa - GUI</title>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-lg bg-purple">
+			<div class="container-fluid">
+				<a class="navbar-brand" href="../../../../index.html">GUI</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="../../../../index.html">Início</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="../../../../projetos/projetos.html">Projetos</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../../../../galeria/galeria.html">Galeria</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="../../../../sobre/sobre.html">Sobre</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<h1 class="text-center my-5">Facilitarefa</h1>
+		<div id="carouselFacilitarefa" class="w-75 m-auto carousel slide" data-bs-theme="dark">
+			<div class="carousel-indicators">
+				<button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="0" class="active"
+					aria-current="true" aria-label="priemeiro slide"></button>
+				<button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="1"
+					aria-label="segundo slide"></button>
+				<button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="2"
+					aria-label="terceiro slide"></button>
+				<button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="3"
+					aria-label="quarto slide"></button>
+				<button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="4"
+					aria-label="quinto slide"></button>
+				<button type="button" data-bs-target="#carouselFacilitarefa" data-bs-slide-to="5"
+					aria-label="sexto slide"></button>
+			</div>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="img/facilitarefa-slide-1.png" class="d-block w-100"
+						alt="captura de tela do facilitarefa quando não tem nenhuma tarefa registrada" loading="lazy" />
+				</div>
+				<div class="carousel-item">
+					<img src="img/facilitarefa-slide2.png" class="d-block w-100"
+						alt="captura de tela do facilitarefa registrando uma nova tarefa" loading="lazy" />
+				</div>
+				<div class="carousel-item">
+					<img src="img/facilitarefa-slide3.png" class="d-block w-100"
+						alt="captura de tela com uma nova tarefa" />
+				</div>
+				<div class="carousel-item">
+					<img src="img/facilitarefa-slide4.png" class="d-block w-100"
+						alt="captura de tela com a  atualização da tarefa" loading="lazy" />
+				</div>
+				<div class="carousel-item">
+					<img src="img/facilitarefa-slide5.png" class="d-block w-100"
+						alt="captura de tela com a tarefa atualizada" loading="lazy" />
+				</div>
+				<div class="carousel-item">
+					<img src="img/facilitarefa-slide6.png" class="d-block w-100"
+						alt="captura de tela com a tarefa removida" loading="lazy" />
+				</div>
+			</div>
+			<button class="carousel-control-prev" type="button" data-bs-target="#carouselFacilitarefa"
+				data-bs-slide="prev" />
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Anterior</span>
+			</button>
+			<button class="carousel-control-next" type="button" data-bs-target="#carouselFacilitarefa"
+				data-bs-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="visually-hidden">Próximo</span>
+			</button>
+		</div>
+		<p class="fs-2 m-5 paragrafo3">Gerenciador de tarefas demonstrando as operações de CRUD(Create, Read, Update and
+			Delete) por meio da integração do aplicativo em PHP
+			com o banco de dados(por meio da extensão MySQLi).</p>
+		<p class="fs-2 m-5 paragrafo3">Este projeto foi meu trabalho final em Desenvolvimento de Sistemas Web I.</p>
+		<p class="fs-2 m-5"><a href="https://github.com/guilherme-da-silva-vieira/facilitarefa"
+				class="btn btn-dark btn-lg w-100"><span class="bi bi-github"></span> Analisar Código-Fonte</a></p>
 	</main>
-	 <footer class="text-center bg-purple fs-4 p-1"><span id="copy"></span></footer>
-	 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
-	 <script src="../../../../scripts/script.js"></script>
-	 <script defer>
-	   incluirAno();
-	 </script>
-  </body>
+	<footer class="text-center bg-purple fs-4 p-1"><span id="copy"></span></footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+		crossorigin="anonymous"></script>
+	<script src="../../../../scripts/script.js"></script>
+	<script defer>
+		incluirAno();
+	</script>
+</body>
+
 </html>
